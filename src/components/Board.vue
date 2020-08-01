@@ -24,8 +24,8 @@ export default {
     dragStart: (f) => {
       const target = f.target;
       // console.log(Object.keys(target.style))
-      console.log(f.target._prevClass)
-       if(f.target._prevClass.startsWith('board')){
+      // console.log(f.target._prevClass)
+       if(f.target._prevClass.startsWith('board')||f.target._prevClass.startsWith('card')){
       f.dataTransfer.setData("board_id", target.id)}
       // console.log(f.board_id)
       setTimeout(() => {
@@ -38,7 +38,9 @@ export default {
       // console.log(Object.keys(card.style.display))
       // console.log(Object.keys(card_id))
       card.style.display = "block";
-      e.target.appendChild(card);
+      if(e.target._prevClass.startsWith('board')||e.target._prevClass.startsWith('card')){
+        console.log(e.target._prevClass.startsWith('board')+' '+card)
+      e.target.appendChild(card)}
       // console.log('e: '+e.dataTransfer.getData('card_id'))
       // console.log('checkTrust: '+Object.keys(e))
       // console.log('card_id.target: '+Object.keys(card_id)+' '+Object.keys(e.target))
