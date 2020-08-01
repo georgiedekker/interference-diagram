@@ -119,7 +119,7 @@ export default {
   margin-top: 0px;
 }
 .boards {
-  height: 200px;
+  height: 400px;
 }
 .board {
   height: 150px;

@@ -1,6 +1,10 @@
 <template>
   <v-card outlined light :id="id" class="card" :draggable="draggable" @dragstart="dragStart">
-    <v-card-title><v-text-field name="name" text-align="center" label="Card" hide-details="auto" filled shaped dense></v-text-field></v-card-title>
+    <v-row>
+      <v-col cols="2"></v-col>
+       <v-col cols="8"><v-text-field name="name" text-align="center" label="Card" hide-details="auto" filled shaped dense></v-text-field></v-col>
+      <v-col cols="2"></v-col>
+      </v-row>
     <slot />
   </v-card>
 </template>

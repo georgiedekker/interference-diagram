@@ -9,6 +9,11 @@
     @dragend.prevent="dragEnd"
     @drop.prevent="drop"
   >    
+  <v-row>
+  <v-col cols="2"></v-col>
+  <v-col cols="8"><v-text-field name="name" text-align="center" label="Area" hide-details="auto" filled shaped dense></v-text-field></v-col>
+  <v-col cols="2"></v-col>
+  </v-row>
         <slot />
      </v-card>
      </v-col>
