@@ -1,6 +1,8 @@
 <template>
 <v-card
-  dark
+    dark
+    child-flex
+    min-height="300"
     :id="id"
     class="board"
     :draggable="draggable"

@@ -119,9 +119,12 @@ export default {
   margin-top: 0px;
 }
 .boards {
-  height: 400px;
+  margin-bottom: 40px;
+  padding-bottom: 100px;
+  /* padding-top: 100px; */
 }
 .board {
-  height: 150px;
+  /* margin-bottom: 20px; */
+  padding-bottom: 100px;
 }
 </style>
