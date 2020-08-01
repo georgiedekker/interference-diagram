@@ -48,9 +48,9 @@
           </Card>
         </Board>
         </Boards>
-        <Boards id=goal>
-        <Board id=goal draggable="false">
-          <Card id="goal" draggable="false">
+        <Boards id=boards-5>
+        <Board id=board5 draggable="true">
+          <Card id="board" draggable="true">
           </Card>
         </Board>
         </Boards>

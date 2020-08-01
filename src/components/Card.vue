@@ -11,7 +11,8 @@ export default {
   methods: {
     dragStart: (e) => {    
       const target = e.target;
-      e.dataTransfer.setData("card_id", target.id);
+      if(e.target._prevClass.startsWith('card')){
+      e.dataTransfer.setData("card_id", target.id)}
       setTimeout(() => {
         target.style.display = "none";
       }, 0);
