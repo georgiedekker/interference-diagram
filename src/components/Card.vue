@@ -16,10 +16,11 @@ export default {
     dragStart: (e) => {    
       const target = e.target;
       if(e.target._prevClass.startsWith('card')){
-      e.dataTransfer.setData("card_id", target.id)}
+      console.log('dragStart of CARD: '+e.target.className)
+      e.dataTransfer.setData("card_id", target.id)
       setTimeout(() => {
-        target.style.display = "none";
-      }, 0);
+        target.style.display = "none"
+      }, 0)}
     },
   },
 };
